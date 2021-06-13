@@ -2,10 +2,10 @@
 <template>
  <div class="container mt-5">
     <h2>Sign Up</h2>
-    <form @submit.prevent="signin">
+    <form v-on:submit.prevent="signin">
   <div class="form-group">
     <div class="alert alert-danger" v-if="error">{{ error}}</div>
-    <label for="InputEmail1">Email address</label>
+    <label for="email">Email address</label>
     <input type="email" v-model="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Please Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
@@ -43,9 +43,13 @@ export default {
     },
     methods: {
         signin () {
-            this.$http.plain.post( '/users/sign_up', { email: this.email, password: this.password, password_confirmation: this.password_confirmation} )
-            .then(response => this.signinSuccessful(response))
-            .catch(error => this.signinFail)
+        console.log({ email: this.email, password: this.password, password_confirmation: this.password_confirmation });
+        alert('Processing!');
+        }
+        //signin () {
+            //this.$http.plain.post( '/api/v1/sign_up/', { email: this.email, password: this.password, password_confirmation: this.password_confirmation} )
+            //.then(response => this.signinSuccessful(response))
+            //.catch(error => this.signinFail)
         },
         signinSuccessful(response) {
           if (!response.data.csrf) {
@@ -68,5 +72,4 @@ export default {
           }
         }
     }
-}
 </script>
