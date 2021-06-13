@@ -12,7 +12,7 @@
     <label for="password">Password</label>
     <input type="password" v-model="password" class="form-control" id="password" placeholder="Password">
   </div>
-  <button type="submit" class="btn btn-secondary mt-3">Sign In</button>
+  <button type="submit" class="btn btn-success mt-3">Sign In</button>
   <div class="mt-3">
   <router-link to="/signup" class="btn btn-primary">Sign Up</router-link>
   </div>
