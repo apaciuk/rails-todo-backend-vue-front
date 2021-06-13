@@ -1,6 +1,6 @@
 # README
 
-Starter namespaced and tested Rails API with devise token auth
+Namespaced and tested Rails todo API with devise token auth and vue front
 
 # Ruby version
 
