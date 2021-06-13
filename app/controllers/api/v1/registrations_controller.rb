@@ -6,7 +6,7 @@ class Api::V1::RegistrationsController < Devise::RegistrationsController
       if user.save
         json_response "Signed Up successfully", true, {user: user}, :ok
       else
-        json_response "Something wrong", false, {}, :unprocessable_entity
+        json_response "Something is wrong", false, {}, :unprocessable_entity
       end
     end
   

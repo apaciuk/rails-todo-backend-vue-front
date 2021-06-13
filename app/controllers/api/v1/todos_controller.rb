@@ -10,7 +10,7 @@ class Api::V1::TodosController < ApplicationController
       limit = limit.to_i
       @todos = @todos.last(limit)
     end
-    render json: @todos.reverse
+    render json: @todos
   end
 
 

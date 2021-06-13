@@ -2,7 +2,7 @@
 <template>
  <div class="container mt-5">
     <h2>Sign Up</h2>
-    <form @submit.prevent="signup">
+    <form @submit.prevent="signin">
   <div class="form-group">
     <div class="alert alert-danger" v-if="error">{{ error}}</div>
     <label for="InputEmail1">Email address</label>
@@ -19,20 +19,20 @@
   </div>
   <button type="submit" class="btn btn-primary mt-3">Sign Up</button>
   <div class="mt-3">
-  <router-link to="/" class="btn btn-success">Sign In</router-link>
+  <router-link to="/signin" class="btn btn-success">Sign In</router-link>
   </div>
 </form>
 </div>
 </template>
 <script>
 export default {
-    name: 'Signin',
+    name: 'Signup',
     data () {
         return {
             email: '',
             password: '',
-            password_confirmation,
-            error
+            password_confirmation: '',
+            error: ''
         }
     },
     created () {
@@ -43,7 +43,7 @@ export default {
     },
     methods: {
         signin () {
-            this.$http.plain.post( '/users/sign_in', { email: this.email, password: this.password, password_confirmation: this.password_confirmation} )
+            this.$http.plain.post( '/users/sign_up', { email: this.email, password: this.password, password_confirmation: this.password_confirmation} )
             .then(response => this.signinSuccessful(response))
             .catch(error => this.signinFail)
         },
@@ -58,7 +58,7 @@ export default {
           this.$router.replace('/api/v1/todos')
         },
         signinFailed(error) {
-          this.error = (error.response && error.response.data && error.response.data.error) || ''
+          this.error = (error.response && error.response.data && error.response.data.error) || 'Something went wrong'
           delete localStorage.csrf
           delete localStorage.signedIn
         },
