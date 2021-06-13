@@ -1,6 +1,7 @@
 <template>
  <div class="container">
-    <form @submit.prevent="signin">
+   <h2>Sign In</h2>
+    <form @submit.prevent="signin()">
   <div class="form-group">
     <div class="alert alert-danger" v-if="error">{{ error}}</div>
     <label for="InputEmail1">Email address</label>
@@ -11,14 +12,9 @@
     <label for="password">Password</label>
     <input type="password" v-model="password" class="form-control" id="password" placeholder="Password">
   </div>
-    <div class="form-group">
-    <label for="password-confirmation">Password Confirmation</label>
-    <input type="password" v-model="password_confirmation" class="form-control" id="password-confirmation" placeholder="Password Confirmation">
-  </div>
-  <br />
-  <button type="submit" class="btn btn-primary">Sign In</button>
+  <button type="submit" class="btn btn-secondary mt-3">Sign In</button>
   <div class="mt-3">
-  <router-link to="/signup" class="btn btn-secondary">Sign In</router-link>
+  <router-link to="/signup" class="btn btn-primary">Sign Up</router-link>
   </div>
 </form>
 </div>
@@ -30,8 +26,7 @@ export default {
         return {
             email: '',
             password: '',
-            password_confirmation,
-            error
+            error: ''
         }
     },
     created () {

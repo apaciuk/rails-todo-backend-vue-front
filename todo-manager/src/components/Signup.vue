@@ -1,5 +1,7 @@
+
 <template>
  <div class="container">
+    <h2>Sign Up</h2>
     <form @submit.prevent="signup">
   <div class="form-group">
     <div class="alert alert-danger" v-if="error">{{ error}}</div>
@@ -15,10 +17,9 @@
     <label for="password-confirmation">Password Confirmation</label>
     <input type="password" v-model="password_confirmation" class="form-control" id="password-confirmation" placeholder="Password Confirmation">
   </div>
-  <br />
-  <button type="submit" class="btn btn-primary">Sign Up</button>
+  <button type="submit" class="btn btn-primary mt-3">Sign Up</button>
   <div class="mt-3">
-  <router-link to="/signup" class="btn btn-secondary">Sign In</router-link>
+  <router-link to="/" class="btn btn-secondary">Sign In</router-link>
   </div>
 </form>
 </div>
