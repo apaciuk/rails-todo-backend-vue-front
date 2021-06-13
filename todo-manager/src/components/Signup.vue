@@ -1,6 +1,6 @@
 <template>
  <div class="container">
-    <form @submit.prevent="signin">
+    <form @submit.prevent="signup">
   <div class="form-group">
     <div class="alert alert-danger" v-if="error">{{ error}}</div>
     <label for="InputEmail1">Email address</label>
@@ -16,7 +16,7 @@
     <input type="password" v-model="password_confirmation" class="form-control" id="password-confirmation" placeholder="Password Confirmation">
   </div>
   <br />
-  <button type="submit" class="btn btn-primary">Sign In</button>
+  <button type="submit" class="btn btn-primary">Sign Up</button>
   <div class="mt-3">
   <router-link to="/signup" class="btn btn-secondary">Sign In</router-link>
   </div>
