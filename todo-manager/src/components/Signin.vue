@@ -36,6 +36,7 @@ export default {
         this.checkedSignedIn
     },
     methods: {
+        //  Check submit
         signin () {
         console.log({ email: this.email, password: this.password });
         alert('Processing!');
