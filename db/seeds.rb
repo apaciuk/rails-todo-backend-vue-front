@@ -3,5 +3,18 @@
 #
 # Examples:
 #
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+
+p "Seeding 20 todos"
+20.times do |n|
+todos = Todo.create(
+    title: Faker::Name.name,
+    completed: Faker::Boolean.boolean(true_ratio: 0.4)
+ )
+end
+
+
+
+
+
+
+   

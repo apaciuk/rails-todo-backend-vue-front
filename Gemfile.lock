@@ -70,6 +70,8 @@ GEM
       responders
       warden (~> 1.2.3)
     erubi (1.10.0)
+    faker (2.18.0)
+      i18n (>= 1.6, < 2)
     ffi (1.15.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
@@ -165,6 +167,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.2)
   byebug
   devise
+  faker
   listen (~> 3.2)
   puma (~> 4.1)
   rack-cors
