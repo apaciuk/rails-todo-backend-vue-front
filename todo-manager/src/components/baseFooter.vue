@@ -10,7 +10,7 @@
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">About us</a>
+              <a href="https://xhostcom.com/about/" class="text-white">About Me</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -18,7 +18,7 @@
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Products</a>
+              <a href="https://www.xhostcom.com/portfolio/" class="text-white">Portfolio</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -26,7 +26,7 @@
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Awards</a>
+              <a href="https://opendevhub.com/what-is-arctic-code-vault-contributor-badge/" class="text-white">Arctic Code Vault</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -34,7 +34,7 @@
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Help</a>
+              <a href="mailto:xhostcom@gmail.com" class="text-white">Email</a>
             </h6>
           </div>
           <!-- Grid column -->
@@ -42,7 +42,7 @@
           <!-- Grid column -->
           <div class="col-md-2">
             <h6 class="text-uppercase font-weight-bold">
-              <a href="#!" class="text-white">Contact</a>
+              <a href="https://www.xhostcom.com/contact" class="text-white">Contact</a>
             </h6>
           </div>
           <!-- Grid column -->

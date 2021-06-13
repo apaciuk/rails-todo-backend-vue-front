@@ -1,6 +1,6 @@
 
 <template>
- <div class="container">
+ <div class="container mt-5">
     <h2>Sign Up</h2>
     <form @submit.prevent="signup">
   <div class="form-group">

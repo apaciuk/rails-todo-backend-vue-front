@@ -9,21 +9,14 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                         <li class="nav-item"><router-link to="/" class="btn btn-link">Home</router-link></li>
-                         <li class="nav-item"><router-link to="/" class="btn btn-secondary">Sign In</router-link></li>
+                         <li class="nav-item"><router-link to="/signin" class="btn btn-secondary">Sign In</router-link></li>
                         <li class="nav-item"><router-link to="/signup" class="btn btn-primary">Sign Up</router-link></li>
                    </ul>
                 </div>
             </div>
         </nav>
     </header>
-        <!-- Page content-->
-        <div class="container">
-            <div class="text-center mt-5">
-                <h1>Todo Manager Front</h1>
-                <p class="lead">A front end Rails API management portal with Vue JS</p>
-                <p>Vue JS, Axios, Bootstrap 5, Ruby on Rails, Devise Tokenized Auth, Sqlite, Redis, PostgreSQL </p>
-            </div>
-        </div>
+      
     </div>
 </template>
 <style scoped>
